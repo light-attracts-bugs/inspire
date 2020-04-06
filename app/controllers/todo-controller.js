@@ -8,6 +8,7 @@ function _drawTodos() {
   let todos = _store.State.todos
   console.log(typeof todos)
   console.log(todos)
+  template += `<p class="todo-count">Todo Count:  ${_store.State.todos.length.toString()}</p>`
   todos.forEach(todo => template += todo.Template)
   document.getElementById("todos").innerHTML = template
 }
