@@ -8,7 +8,8 @@ import store from "../store.js";
 function drawWeather() {
   console.log("THE WEATHER MAN SAYS:", store.State.weather);
   let weatherElem = document.getElementById("weather")
-  weatherElem.innerText = store.State.weather.city + " temperature: " + store.State.weather.kelvin + " kelvin"
+  let fahrenheit = (store.State.weather.kelvin - 273.15) * (9/5) + 32
+  weatherElem.innerText = store.State.weather.city + " " + Math.round(fahrenheit) + " °F"
 }
 export default class WeatherController {
   constructor() {

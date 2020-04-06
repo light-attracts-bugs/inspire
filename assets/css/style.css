@@ -2,3 +2,27 @@
   color: red;
   font-size: 2em;
 }
+
+#todoList{
+  font-size: 1rem;
+  font-weight: bold;
+  color: blueviolet;
+  display: block;
+  position: absolute;
+  right: 0rem;
+  bottom: 0rem;
+  max-width: 350px;
+}
+
+#quote{
+  position: absolute;
+  right: 30vw;
+  top: 35vh;
+  width: 40vw;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+#weather{
+  font-size: 2.2rem;
+}

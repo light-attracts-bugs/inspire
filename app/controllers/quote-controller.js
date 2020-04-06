@@ -7,7 +7,7 @@ import store from "../store.js"
 function drawQuote(){
   console.log("THE QUOTE MAN SAYS:", store.State.quote)
   let quoteElem = document.getElementById("quote")
-  quoteElem.innerText = "Quote: " + store.State.quote.body + "\nAuthor: " + store.State.quote.author
+  quoteElem.innerText = store.State.quote.body + "\nAuthor: " + store.State.quote.author
 }
 export default class QuoteController {
   constructor(){

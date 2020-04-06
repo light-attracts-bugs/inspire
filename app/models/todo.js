@@ -10,15 +10,11 @@ export default class Todo {
   get Template(){
     if(this.completed){
       return `
-      <div class="col-4">
       <p><input type="checkbox" id="${this._id}"  onclick="app.todoController.toggleTodoStatus('${this._id}')" checked/><strike>${this.description}</strike> <button type="button" class="btn btn-danger btn-sm" onclick="app.todoController.removeTodo('${this._id}')">x</button></p>
-      </div
       `
     } else{
       return `
-      <div class="col-4">
       <p><input type="checkbox" id="${this._id}"  onclick="app.todoController.toggleTodoStatus('${this._id}')" />${this.description}<button type="button" class="btn btn-danger btn-sm" onclick="app.todoController.removeTodo('${this._id}')">x</button></p>
-      </div>
       `
     }
   }
